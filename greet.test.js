@@ -21,4 +21,8 @@ describe('greet', () => {
     expect(greet(['DANA', 'TOM'])).toBe('HELLO DANA AND TOM!')
   })
 
+  it('should handle arbitary number of names', () => {
+    expect(greet(["Amy", "Brian", "Charlotte"])).toBe("Hello, Amy, Brian, and Charlotte.")
+  })
+
 })

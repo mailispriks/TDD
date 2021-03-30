@@ -5,7 +5,13 @@ function isUpperCase(str) {
 const greet = (name) => {
   let correctName = null
   if (Array.isArray(name)) {
-    correctName = isUpperCase(name.join()) ? name.join(' AND ') : name.join(' and ')
+    if (name.length === 2) {
+      correctName = isUpperCase(name.join()) ? name.join(' AND ') : name.join(' and ')
+    } else {
+      const allNames = name.join(', ')
+      const last = name.pop();
+      correctName = allNames.replace(last, ('and ' + last))
+    }
   } else {
     correctName = name || 'my friend'
   }
