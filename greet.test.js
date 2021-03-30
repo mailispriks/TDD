@@ -25,4 +25,8 @@ describe('greet', () => {
     expect(greet(["Amy", "Brian", "Charlotte"])).toBe("Hello, Amy, Brian, and Charlotte.")
   })
 
+  it('should handle mxing up normal and shouting', () => {
+    expect(greet(["Amy", "BRIAN", "Charlotte"])).toBe("Hello, Amy and Charlotte. AND HELLO BRIAN!")
+  })
+
 })

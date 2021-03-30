@@ -5,13 +5,31 @@ function isUpperCase(str) {
 const greet = (name) => {
   let correctName = null
   if (Array.isArray(name)) {
-    if (name.length === 2) {
-      correctName = isUpperCase(name.join()) ? name.join(' AND ') : name.join(' and ')
-    } else {
-      const allNames = name.join(', ')
-      const last = name.pop();
-      correctName = allNames.replace(last, ('and ' + last))
+    let str = ''
+    let normalNames = [] // Amy, Charlotte
+    let shoutingNames = [] // BRIAN
+
+    for (const n of name) {
+      isUpperCase(n) ? shoutingNames.push(n) : normalNames.push(n)
     }
+
+    if (normalNames.length > 0) {
+      if (normalNames.length === 2) {
+        str = `Hello, ${normalNames.join(' and ')}.`
+      } else {
+        const allNames = normalNames.join(', ')
+        const last = normalNames.pop()
+        str = `Hello, ${allNames.replace(last, ('and ' + last))}.`
+      }
+    }
+    if (shoutingNames.length > 0) {
+      if (normalNames.length === 0) {
+        str = `HELLO ${shoutingNames.join(' AND ')}!`
+      } else {
+        str += ` AND HELLO ${shoutingNames.join(' AND ')}!`
+      }
+    }
+    return str
   } else {
     correctName = name || 'my friend'
   }
