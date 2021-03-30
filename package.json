@@ -1,0 +1,22 @@
+{
+  "name": "adder",
+  "version": "1.0.0",
+  "description": "# Requirement 1 Write a method greet(name) that interpolates name in a simple greeting. For example, when name is `\"Bob\"`, the method should return a string `\"Hello, Bob.\"`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mailispriks/TDD.git"
+  },
+  "author": "Mailis Priks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mailispriks/TDD/issues"
+  },
+  "homepage": "https://github.com/mailispriks/TDD#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
