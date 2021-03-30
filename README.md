@@ -18,4 +18,12 @@ Handle an arbitrary number of names as input. When name represents more than two
 # Requirement 6
 Allow mixing of normal and shouted names by separating the response into two greetings. For example, when name is `["Amy", "BRIAN", "Charlotte"]`, then the method should return the string `"Hello, Amy and Charlotte. AND HELLO BRIAN!"`
 
+TDD video:
 https://www.youtube.com/watch?v=oneGCBiPK_Q
+
+
+VUEX VIDEOD:
+Vali 1 video ja tee sellega kaasa!
+
+https://www.youtube.com/watch?v=FIL0za5MzZA
+https://www.youtube.com/watch?v=oxUyIzDbZts
