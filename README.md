@@ -26,4 +26,5 @@ VUEX VIDEOD:
 Vali 1 video ja tee sellega kaasa!
 
 https://www.youtube.com/watch?v=FIL0za5MzZA
+
 https://www.youtube.com/watch?v=oxUyIzDbZts
